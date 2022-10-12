@@ -25,7 +25,8 @@ const options = {
           Notiflix.Notify.success('Please press "START" to proceed');
           dateTime.dataset.time = selectedDates[0].getTime();
       } else {
-           Notiflix.Notify.failure('Please choose a date in the future');
+          Notiflix.Notify.failure('Please choose a date in the future');
+          startBtn.disabled = true;
     }
   },
 };
